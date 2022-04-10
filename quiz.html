@@ -1,0 +1,121 @@
+<script src="gsap.js"></script>
+
+<link rel="stylesheet" href="quiz.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+<section id="interactive-quiz-section">
+  
+
+	<div id="quiz-container">
+        
+        <!-- QUESTION SECTION #1-->
+      <div id="inner-quiz-container">
+      	<div class="message" id="message1" >
+          <h1> What's you hair texture, gorgeous? </h1>
+        </div>
+
+        <div class="answer_row" id="answer_row_1"> 
+            
+
+            <div class="answer" id="q1_answer_1"> 
+                <img class = "answer_image" src="imgs/Img_1.png">
+                <button class="answer_button"  data-choice="curly coily" data-question="hairtype" onclick="answerClick(this)">Curly / Coily</button>
+            </div>
+
+            <div class="answer" id="q1_answer_2"> 
+                <img class = "answer_image" src="imgs/Img_2.png">
+                <button class="answer_button"  data-choice="staight" data-question="hairtype" onclick="answerClick(this)"> Straight </button>
+            </div>        
+            
+            <div class="answer" id="q1_answer_3"> 
+                <img class = "answer_image" src="imgs/Img_3.png">
+                <button class="answer_button"  data-choice="wavy" data-question="hairtype" onclick="answerClick(this)"> Wavy </button>
+            </div>   
+            
+           
+
+        </div> 
+
+        <div class="user_message" id="user_message_1">
+            <h1 id="hairtype"></h1>
+        </div>
+
+        <!-- QUESTION SECTION #2-->
+          <div class="message" id="message2" >
+            <h1>Now how thicc is she?</h1>
+          </div>
+  
+          <div class="answer_row" id="answer_row_2"> 
+              
+  
+              <div class="answer" id="q2_answer_1"> 
+                  <img class = "answer_image" src="imgs/Img_1.png">
+                  <button class="answer_button"  data-choice="thin fine" data-question="thicc" onclick="answerClick(this)"> Thin / Fine</button>
+              </div>
+  
+              <div class="answer" id="q2_answer_2"> 
+                  <img class = "answer_image" src="imgs/Img_2.png">
+                  <button class="answer_button"  data-choice="medium" data-question="thicc" onclick="answerClick(this)"> Medium  </button>
+              </div>        
+              
+              <div class="answer" id="q2_answer_3"> 
+                  <img class = "answer_image" src="imgs/Img_3.png">
+                  <button class="answer_button"  data-choice="thick corse" data-question="thicc" onclick="answerClick(this)"> Thick / Course </button>
+              </div>   
+            
+  
+          </div> 
+  
+          <div class="user_message" id="user_message_2">
+              <h1 id="thicc"></h1>
+          </div>
+        
+          <!-- QUESTION SECTION #3-->
+          <div class="message" id="message3" >
+            <h1>What look are you going for? </h1>
+          </div>
+  
+          <div class="answer_row" id="answer_row_3"> 
+              
+  
+              <div class="answer" id="q3_answer_1"> 
+                  <img class = "answer_image" src="imgs/Img_1.png">
+                  <button class="answer_button"  data-choice="beachy waves" data-question="look" onclick="answerClick(this)"> Beachy Waves</button>
+              </div>
+  
+              <div class="answer" id="q3_answer_2"> 
+                  <img class = "answer_image" src="imgs/Img_2.png">
+                  <button class="answer_button" data-choice="straight sleek" data-question="look" onclick="answerClick(this)"> Straight, Sleek Vibes  </button>
+              </div>        
+              
+              <div class="answer" id="q3_answer_3"> 
+                  <img class = "answer_image" src="imgs/Img_3.png">
+                  <button class="answer_button"  data-choice="coily curls" data-question="look" onclick="answerClick(this)"> Coily Curls </button>
+              </div>   
+            
+              <div class="answer" id="q3_answer_4"> 
+                <img class = "answer_image" src="imgs/Img_4.png">
+                <button class="answer_button"  data-choice="blow out" data-question="look" onclick="answerClick(this)"> Banging Blow Out </button>
+             </div> 
+  
+          </div> 
+  
+          <div class="user_message" id="user_message_3">
+              <h1 id="look"></h1>
+          </div>
+
+          <!-- Final Answer -->
+        
+          <div class="message" id="finalAnswer" >
+            <h1 id="answer_text"> heeeehsh </h1>
+          </div>
+          
+
+        </div>
+      
+  	</div>
+  
+</section>
+
+<script src="quiz.js"></script>
